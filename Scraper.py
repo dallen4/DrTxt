@@ -21,7 +21,7 @@ startTime = time.time()
 diseasesAdded = []
 
 count = 0
-for letter in letterH: string.ascii_lowercase:#Go through all the alphabet
+for letter in string.ascii_lowercase:#Go through all the alphabet
 	page = urllib2.urlopen(DISEASE_LIST_LINK_BASE + letter).read() #get the html
 	tree = html.fromstring(page) #make the html easier to use
 	links = tree.xpath('//*[@id="index"]/ol/li/a') #Get all diseases in the listing
