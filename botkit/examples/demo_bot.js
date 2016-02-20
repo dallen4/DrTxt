@@ -75,7 +75,7 @@ controller.spawn({
 
 
 controller.hears(['hello','hi'],['direct_message','direct_mention','mention'],function(bot,message) {
-    bot.reply(message,"Hello.");
+    bot.reply(message,"Goodbye.");
 });
 
 controller.hears(['attach'],['direct_message','direct_mention'],function(bot,message) {
